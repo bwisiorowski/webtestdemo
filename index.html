@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name='viewport' content='with=device-width, initial-scale=1.0'>
+        <title>HOMe</title>
+        <link rel="shortcut icon" href="favicon.ico">
+        <link rel="stylesheet" href='style.css'>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel='stylesheet' href='font-awesome/css/font-awesome.min.css'>
+    </head>
+    <body>
+        <section class='header'>
+            <nav>
+                <a href='index.html'><img src='images/logo.png'></a>
+                <div class='nav-links' id='navLinks'>
+                    <i class="fa fa-times" onclick='hideMenu()' id='hidemenu'></i>
+                    <ul>
+                        <li><a href='index.html' class='rev'>HOME</a></li>
+                        <li><a href='aboutme.html' class='rev'>ABOUT</a></li>
+                        <li><a href='' class='rev'>PORTFOLIO</a></li>
+                        <li><a href='contact.html' class='rev'>CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick='showMenu()'></i>
+            </nav>
+        </section>
+        <section class='menu'>
+            <a href='aboutme.html'><h1 class='reverse'>About me</h1></a>
+            <a href=''><h1 class='reverse'>Portfolio</h1></a>
+            <a href='contact.html'><h1 class='reverse'>Contact</h1></a>
+        </section>
+        <section class='footer'>
+            <p>All rights reserved © by Bartosz Wisiorowski</p>
+        </section>
+        <script>
+            var navLinks = document.getElementById('navLinks');
+
+            function showMenu(){
+                navLinks.style.right = '0';
+            }
+            function hideMenu(){
+                navLinks.style.right = '-200px';
+            }
+        </script>
+    </body>
+</html>

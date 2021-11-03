@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name='viewport' content='with=device-width, initial-scale=1.0'>
+        <title>ABOUTme</title>
+        <link rel="shortcut icon" href="favicon.ico">
+        <link rel="stylesheet" href='aboutme.css'>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel='stylesheet' href='font-awesome/css/font-awesome.min.css'>
+    </head>
+    <body>
+        <section class='header'>
+            <nav>
+                <a href='index.html'><img src='images/logo.png'></a>
+                <div class='nav-links' id='navLinks'>
+                    <i class="fa fa-times" onclick='hideMenu()' id='hidemenu'></i>
+                    <ul>
+                        <li><a href='index.html' class='rev'>HOME</a></li>
+                        <li><a href='aboutme.html' class='rev'>ABOUT</a></li>
+                        <li><a href='' class='rev'>PORTFOLIO</a></li>
+                        <li><a href='contact.html' class='rev'>CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick='showMenu()' id='showmenu'></i>
+            </nav>
+        </section>
+        <section class='about'>
+            <div class='textbox'>
+                <h1>About me</h1>
+                <p>
+                    Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+                </p>
+                <audio controls>
+                    <source src='bladee.mp3' type='audio/mpeg'>
+                </audio>
+            </div>
+        </section>
+        <section class='footer'>
+            <p>All rights reserved © by Bartosz Wisiorowski</p>
+        </section>
+        <script>
+            var navLinks = document.getElementById('navLinks');
+
+            function showMenu(){
+                navLinks.style.right = '0';
+            }
+            function hideMenu(){
+                navLinks.style.right = '-200px';
+            }
+        </script>
+    </body>
+</html>

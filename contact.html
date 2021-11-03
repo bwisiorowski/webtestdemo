@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name='viewport' content='with=device-width, initial-scale=1.0'>
+        <title>CONTACt</title>
+        <link rel="shortcut icon" href="favicon.ico">
+        <link rel="stylesheet" href='contact.css'>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel='stylesheet' href='font-awesome/css/font-awesome.min.css'>
+    </head>
+    <body>
+        <section class='header'>
+            <nav>
+                <a href='index.html'><img src='images/logo.png'></a>
+                <div class='nav-links' id='navLinks'>
+                    <i class="fa fa-times" onclick='hideMenu()' id='hidemenu'></i>
+                    <ul>
+                        <li><a href='index.html' class='rev'>HOME</a></li>
+                        <li><a href='aboutme.html' class='rev'>ABOUT</a></li>
+                        <li><a href='' class='rev'>PORTFOLIO</a></li>
+                        <li><a href='contact.html' class='rev'>CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick='showMenu()' id='showmenu'></i>
+            </nav>
+        </section>
+        <section class='contact'>
+            <h1>Contact me</h1>
+            <p>If You have any inquiries, please fill the form below &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;or reach me manually</p>
+            <div class='contactbox'>
+                <div class='contactleft'>
+                    <h3>Send your request</h3>
+                    <form action="https://formsubmit.co/bwisiorowsky@email.com" method="POST">
+                        <div class='inputrow'>
+                            <div class='inputgroup'>
+                                <label>Name</label>
+                                <input type='text' placeholder='Your name'>
+                            </div>
+                            <div class='inputgroup'>
+                                <label>Phone</label>
+                                <input type='text' placeholder='Your phone number'>
+                            </div>
+                        </div>
+                        <div class='inputrow'>
+                            <div class='inputgroup'>
+                                <label>E-mail</label>
+                                <input type='text' placeholder='example@gmail.com'>
+                            </div>
+                            <div class='inputgroup'>
+                                <label>Subject</label>
+                                <input type='text' placeholder='Subject'>
+                            </div>
+                        </div>
+                        <label id='message'>Message</label>  
+                        <textarea rows='5' placeholder="Your message"></textarea>
+                        <button type='submit' class='submit'>SEND</button>
+                    </form>
+                </div>
+                <div class='contactright'>
+                    <h3>My info</h3>
+                    <p id='one'>E-mail:</p>
+                    <p id='two'>bwisiorowsky@gmail.com</p>
+                    <p id='one'>Phone</p>
+                    <p id='two'>+48 666 251 131</p>
+                </div>
+            </div>
+        </section>
+        <section class='footer'>
+            <p>All rights reserved © by Bartosz Wisiorowski</p>
+        </section>
+        <script>
+            var navLinks = document.getElementById('navLinks');
+
+            function showMenu(){
+                navLinks.style.right = '0';
+            }
+            function hideMenu(){
+                navLinks.style.right = '-200px';
+            }
+        </script>
+    </body>
+</html>
